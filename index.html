@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Blog Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Random blog generator with modern design">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">RandomBlog</div>
+            <button class="mobile-menu" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#generate">Generate</a></li>
+                <li><a href="#saved">Saved Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Random Blog Generator</h1>
+            <p>Create unique blog posts with a single click</p>
+            <button id="generateBtn" class="cta-button">Generate Blog</button>
+        </section>
+
+        <section id="generate" class="blog-section">
+            <div class="blog-container">
+                <div id="blogOutput" class="blog-content">
+                    <h2>Your Generated Blog</h2>
+                    <div id="blogTitle" class="blog-title"></div>
+                    <div id="blogBody" class="blog-body"></div>
+                </div>
+                <div class="blog-controls">
+                    <button id="saveBtn" class="action-button">Save Blog</button>
+                    <button id="copyBtn" class="action-button">Copy to Clipboard</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="saved" class="saved-section">
+            <h2>Saved Blogs</h2>
+            <div id="savedBlogs" class="saved-blogs-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Random Blog Generator. All rights reserved.</p>
+    </footer>
+
+    <div id="notification" class="notification" role="alert"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
